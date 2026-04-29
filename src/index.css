@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amazon-dark: #131921;
+  --color-amazon-blue: #232f3e;
+  --color-amazon-orange: #febd69;
+  --color-amazon-yellow: #f0c14b;
+  --color-amazon-yellow-hover: #ddb23d;
+  --color-prime-blue: #00a8e1;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-100 text-amazon-dark antialiased;
+  }
+}
+
+.amazon-btn-primary {
+  @apply bg-amazon-yellow hover:bg-amazon-yellow-hover border border-[#a88734] shadow-sm px-4 py-2 rounded-md font-medium transition-colors;
+}
+
+.amazon-btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-300 border border-gray-400 px-4 py-2 rounded-md font-medium transition-colors;
+}
+
+.prime-text {
+  @apply text-prime-blue font-bold tracking-tight text-xs;
+}
